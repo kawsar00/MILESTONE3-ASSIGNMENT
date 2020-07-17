@@ -4,7 +4,7 @@ function feetToMile(feet){
   return mile;
 }
 var getmile = feetToMile(5280);
-console.log(getmile);
+console.log("Your required Mile = " + getmile);
 
 
 // woodCalculator (assignment No: 02)
@@ -15,10 +15,29 @@ function woodCalculator(chair, table, bed){
   var totalWood = woodInChair + woodInTable + woodInBed;
   return totalWood;
 }
-var woodresult = woodCalculator(5, 10, 2);
-console.log(woodresult);
+var woodresult = woodCalculator(10, 15, 2);
+console.log("Total wood = " + woodresult + " cft");
+
 
 // brickCalculator (assignment No: 03)
+function brickCalculator(floorNo){
+  var totalBricks;
+  if(floorNo <=10){
+    totalBricks = floorNo * 1000 * 15;
+    return totalBricks;
+  }
+  else if(floorNo >10 && floorNo <=20){
+    totalBricks = floorNo * 1000 * 12;
+    return totalBricks;
+  }
+  else if(floorNo >20){
+    totalBricks = floorNo * 1000 * 10;
+    return totalBricks;
+  }
+}
+var totalBrickResults = brickCalculator(15);
+console.log(totalBrickResults);
+
 
 // tinyFriend (assignment No: 04)
 function tinyFriend(friendNames){
@@ -32,4 +51,4 @@ function tinyFriend(friendNames){
   return tiny;
 }
 var tinier = tinyFriend(["Rahim", "Rakibul", "Roky", "Rokimuzzaman", "Rafiul"]);
-console.log(tinier);
+console.log("My tiny friends name is: " + tinier);
