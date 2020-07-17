@@ -36,7 +36,7 @@ function brickCalculator(floorNo){
   }
 }
 var totalBrickResults = brickCalculator(15);
-console.log(totalBrickResults);
+console.log("Total Brick is needed: "+ totalBrickResults);
 
 
 // tinyFriend (assignment No: 04)
